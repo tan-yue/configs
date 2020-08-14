@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/tanyue/qemu-4.0.0/roms'
+let g:netrw_dirhist_2='/Users/tanyue/qemu-4.0.0/roms/edk2'
+let g:netrw_dirhist_3='/Users/tanyue/qemu-4.0.0/docs'
+let g:netrw_dirhist_4='/Users/tanyue/qemu-4.0.0/docs/devel'
+let g:netrw_dirhist_5='/Users/tanyue/.vim/bundle/vim-fugitive'
+let g:netrw_dirhist_6='/Users/tanyue/.vim'
+let g:netrw_dirhist_7='/Users/tanyue/.vim/bundle'
+let g:netrw_dirhist_8='/Users/tanyue/.vim/bundle/YouCompleteMe'
