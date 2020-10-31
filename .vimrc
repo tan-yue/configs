@@ -63,9 +63,7 @@ set colorcolumn=100
 set nu
 
 " tab = 4 spaces
-autocmd FileType c,cpp set softtabstop=4 shiftwidth=4 expandtab
-autocmd FileType python,java set softtabstop=4 shiftwidth=4 expandtab
-autocmd FileType verilog set softtabstop=4 shiftwidth=4 expandtab
+set softtabstop=4 shiftwidth=4 expandtab
 
 " shortcut for deleting trailing white spaces
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
