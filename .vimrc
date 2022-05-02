@@ -15,8 +15,13 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'rust-lang/rust.vim'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'preservim/nerdtree'
+"Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'vim-airline/vim-airline'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'JamshedVesuna/vim-markdown-preview'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -45,6 +50,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"let g:ycm_confirm_extra_conf = 0
+let vim_markdown_preview_github=1
+
 " highlight current window's cursor line
 augroup CursorLine
 	au!
@@ -62,8 +70,10 @@ set colorcolumn=100
 " line number
 set nu
 
-" tab = 4 spaces
-set softtabstop=4 shiftwidth=4 expandtab
+" global indenting settings
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " shortcut for deleting trailing white spaces
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -74,6 +84,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
+
+" nerdtree
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 syntax enable
